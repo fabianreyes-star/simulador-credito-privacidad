@@ -45,6 +45,7 @@
       color: var(--muted);
     }
     h2 { font-size: 1.05rem; margin: 28px 0 8px; color: var(--text); }
+    h3 { font-size: 0.95rem; margin: 18px 0 6px; color: var(--text); }
     p, li { font-size: 0.93rem; color: var(--muted); }
     ul { padding-left: 20px; margin-top: 6px; }
     li { margin-bottom: 4px; }
@@ -62,7 +63,7 @@
 <body>
 
   <h1>Política de Privacidad</h1>
-  <p class="subtitle">Última actualización: 2 de abril de 2026</p>
+  <p class="subtitle">Última actualización: 22 de agosto de 2026</p>
 
   <div class="aviso">
     <strong>Aviso importante:</strong> Esta aplicación es una herramienta informativa de cálculo financiero. Los resultados son orientativos y no constituyen una oferta de crédito, asesoría financiera vinculante ni compromiso de ninguna entidad financiera. Las tasas pueden variar según cada entidad.
@@ -73,42 +74,69 @@
   Correo de contacto: <a href="mailto:simuladorcredito.app@gmail.com">simuladorcredito.app@gmail.com</a></p>
 
   <h2>2. Datos que Recopilamos</h2>
-  <p>Esta aplicación <strong>NO recopila, almacena ni transmite datos personales a servidores externos</strong>. Todo el procesamiento ocurre localmente en el dispositivo del usuario.</p>
-  <p>Los únicos datos que se guardan localmente son:</p>
+  <p>Esta aplicación <strong>NO recopila, almacena ni transmite datos personales a servidores externos</strong>. No hay cuentas de usuario, ni registro, ni analítica, ni publicidad. Todo el procesamiento ocurre localmente en el dispositivo del usuario.</p>
+  <p>Los únicos datos que se guardan, y que se guardan <strong>solo en el dispositivo</strong>, son:</p>
   <ul>
-    <li>Alias o nombre local (guardado únicamente en el dispositivo)</li>
-    <li>Historial de simulaciones guardadas por el usuario (guardado únicamente en el dispositivo)</li>
-    <li>Preferencias de notificaciones (guardado únicamente en el dispositivo)</li>
+    <li>El nombre y el logo de la entidad que presta, que se estampan en los documentos compartidos</li>
+    <li>El país, la moneda y el tema de color elegidos</li>
+    <li>Las simulaciones guardadas por el usuario, hasta un máximo de 50</li>
+    <li>Una copia de las últimas tasas legales descargadas, para poder calcular sin conexión</li>
+    <li>Un borrador temporal de lo que se está escribiendo, que se descarta al cerrar la aplicación</li>
   </ul>
-  <p>Estos datos nunca salen del dispositivo y pueden eliminarse en cualquier momento desde <strong>Perfil → Eliminar todo el historial</strong>.</p>
+  <p>Todo ello puede eliminarse en cualquier momento desde <strong>Perfil → Eliminar todo el historial</strong>.</p>
 
-  <h2>3. Tasas e Información Regulatoria</h2>
-  <p>La aplicación consulta un archivo público alojado en GitHub Pages para obtener las tasas de usura y valores regulatorios vigentes en Colombia (Superfinanciera, DIAN). Esta consulta no transmite ningún dato personal — es equivalente a visitar una página web pública.</p>
+  <h3>2.1. Datos de terceros: el cliente</h3>
+  <p>Si el usuario escribe el <strong>nombre y el número de identificación de un cliente</strong> para que aparezcan en el plan de pagos, esos datos se guardan junto a la simulación, en el dispositivo.</p>
+  <p>Son datos de una tercera persona. SimFin no los envía a ninguna parte y no tiene acceso a ellos, pero <strong>quien los solicita y decide usarlos es el usuario de la aplicación</strong>: informar a esa persona, obtener su consentimiento cuando sea exigible y cumplir la normativa de protección de datos que aplique en su país es responsabilidad suya, no de la aplicación.</p>
+  <p>Pueden eliminarse borrando la simulación correspondiente desde la pestaña <strong>Historial</strong>, o todas a la vez desde <strong>Perfil → Eliminar todo el historial</strong>.</p>
 
-  <h2>4. Finalidad del Tratamiento</h2>
-  <p>Los datos locales se usan exclusivamente para mejorar la experiencia del usuario dentro de la aplicación (recordar preferencias y simulaciones guardadas).</p>
+  <h2>3. Copia de seguridad de Android</h2>
+  <p>Si el dispositivo tiene activada la copia de seguridad de Android, los datos de SimFin entran en ella, igual que los de cualquier otra aplicación instalada.</p>
+  <p>Esa copia <strong>va a la cuenta de Google del propio usuario</strong>, cifrada, y la gestiona el sistema operativo. Nosotros no tenemos acceso a ella ni recibimos nada de su contenido. Puede desactivarse desde los ajustes del teléfono, en la sección de copia de seguridad.</p>
 
-  <h2>5. Derechos del Titular (Ley 1581 de 2012)</h2>
-  <p>De acuerdo con la Ley 1581 de 2012 de Protección de Datos Personales de Colombia, el usuario tiene derecho a:</p>
+  <h2>4. Tasas e Información Regulatoria</h2>
+  <p>Al abrirse, la aplicación consulta un archivo público alojado en GitHub Pages para obtener las tasas de usura y valores regulatorios vigentes en Colombia (Superfinanciera, DIAN).</p>
+  <p>Es una consulta de solo lectura: <strong>no transmite ningún dato personal</strong>, ni identificadores, ni información de las simulaciones. Es equivalente a visitar una página web pública. Sin conexión, la aplicación usa la última copia guardada o los valores que trae incorporados.</p>
+
+  <h2>5. Cuando se comparte un documento</h2>
+  <p>El plan de pagos en PDF o en imagen se genera <strong>en el propio dispositivo</strong> y se entrega al menú de compartir de Android. A partir de ese momento, lo que ocurra con el archivo depende de la aplicación que elija el usuario (mensajería, correo, almacenamiento) y de las políticas de esa aplicación. SimFin no interviene ni conserva copia.</p>
+
+  <h2>6. Permisos</h2>
+  <p>SimFin solicita un único permiso: <strong>acceso a internet</strong>, y sólo para la descarga de tasas descrita en el punto 4. No solicita acceso a contactos, ubicación, cámara, micrófono, llamadas ni mensajes.</p>
+  <p>Para subir un logo se utiliza el selector de archivos del sistema, que permite elegir una sola imagen sin conceder acceso al resto de la galería.</p>
+
+  <h2>7. Alcance internacional</h2>
+  <p>SimFin funciona en varios países y adapta la moneda, el formato de los números y el nombre de cada producto financiero.</p>
+  <p>Las validaciones legales —tope de usura, retención en la fuente y gravamen del 4×1000— <strong>se aplican únicamente en Colombia</strong>. Fuera de Colombia la aplicación calcula con fórmulas financieras estándar y <strong>no verifica ni afirma nada</strong> sobre los impuestos ni los límites legales de ningún país.</p>
+
+  <h2>8. Finalidad del Tratamiento</h2>
+  <p>Los datos locales se usan exclusivamente para el funcionamiento de la aplicación: recordar las preferencias, conservar las simulaciones guardadas y completar los documentos que el usuario decide compartir.</p>
+
+  <h2>9. Derechos del Titular</h2>
+  <p>Como la aplicación no recopila ni conserva datos en ningún sistema nuestro, el usuario mantiene el control completo sobre su información y puede consultarla, modificarla o eliminarla en cualquier momento desde la propia aplicación.</p>
+  <p>En Colombia, conforme a la <strong>Ley 1581 de 2012</strong> de Protección de Datos Personales, el titular tiene derecho a:</p>
   <ul>
     <li>Conocer, actualizar y rectificar sus datos</li>
     <li>Solicitar prueba de la autorización otorgada</li>
     <li>Ser informado sobre el uso de sus datos</li>
     <li>Revocar la autorización y solicitar la supresión de datos</li>
   </ul>
-  <p>Para ejercer estos derechos escriba a: <a href="mailto:simuladorcredito.app@gmail.com">simuladorcredito.app@gmail.com</a></p>
+  <p>En otros países aplicará la normativa de protección de datos correspondiente, incluido el Reglamento General de Protección de Datos en la Unión Europea. Para cualquier solicitud: <a href="mailto:simuladorcredito.app@gmail.com">simuladorcredito.app@gmail.com</a></p>
 
-  <h2>6. Seguridad</h2>
-  <p>No transmitimos información a terceros. No usamos cookies de rastreo. No integramos redes de publicidad que recopilen datos personales.</p>
+  <h2>10. Seguridad</h2>
+  <p>No transmitimos información a terceros. No usamos cookies de rastreo. No integramos redes de publicidad ni herramientas de analítica que recopilen datos personales.</p>
 
-  <h2>7. Cambios a esta Política</h2>
-  <p>Cualquier cambio será publicado en esta misma página con la fecha de actualización.</p>
+  <h2>11. Menores de edad</h2>
+  <p>SimFin no está dirigida a menores de 13 años. Como la aplicación no recopila datos en ningún sistema propio, tampoco lo hace respecto de menores.</p>
 
-  <h2>8. Contacto</h2>
+  <h2>12. Cambios a esta Política</h2>
+  <p>Cualquier cambio será publicado en esta misma página, actualizando la fecha del encabezado.</p>
+
+  <h2>13. Contacto</h2>
   <p>Dudas o solicitudes: <a href="mailto:simuladorcredito.app@gmail.com">simuladorcredito.app@gmail.com</a></p>
 
   <footer>
-    SimFin · Simulador de Crédito Colombia · Herramienta informativa · No somos entidad financiera
+    SimFin · Simuladores financieros · Herramienta informativa · No somos entidad financiera
   </footer>
 
 </body>
