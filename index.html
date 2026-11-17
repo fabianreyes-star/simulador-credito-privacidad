@@ -63,7 +63,7 @@
 <body>
 
   <h1>Política de Privacidad</h1>
-  <p class="subtitle">Última actualización: 22 de agosto de 2026</p>
+  <p class="subtitle">Última actualización: 16 de noviembre de 2026</p>
 
   <div class="aviso">
     <strong>Aviso importante:</strong> Esta aplicación es una herramienta informativa de cálculo financiero. Los resultados son orientativos y no constituyen una oferta de crédito, asesoría financiera vinculante ni compromiso de ninguna entidad financiera. Las tasas pueden variar según cada entidad.
@@ -80,15 +80,20 @@
     <li>El nombre y el logo de la entidad que presta, que se estampan en los documentos compartidos</li>
     <li>El país, la moneda y el tema de color elegidos</li>
     <li>Las simulaciones guardadas por el usuario, hasta un máximo de 50</li>
+    <li>Los créditos registrados en la cartera, con su plan de pagos y los pagos anotados, hasta un máximo de 200</li>
     <li>Una copia de las últimas tasas legales descargadas, para poder calcular sin conexión</li>
     <li>Un borrador temporal de lo que se está escribiendo, que se descarta al cerrar la aplicación</li>
   </ul>
-  <p>Todo ello puede eliminarse en cualquier momento desde <strong>Perfil → Eliminar todo el historial</strong>.</p>
+  <p>Las simulaciones y las preferencias pueden eliminarse en cualquier momento desde <strong>Perfil → Eliminar todo el historial</strong>. Los créditos de la cartera se eliminan uno a uno desde su pantalla, con <strong>Eliminar crédito</strong>. Desinstalar la aplicación lo borra todo.</p>
 
   <h3>2.1. Datos de terceros: el cliente</h3>
-  <p>Si el usuario escribe el <strong>nombre y el número de identificación de un cliente</strong> para que aparezcan en el plan de pagos, esos datos se guardan junto a la simulación, en el dispositivo.</p>
+  <p>Si el usuario escribe el <strong>nombre y el número de identificación de un cliente</strong> para que aparezcan en el plan de pagos, esos datos se guardan junto a la simulación, en el dispositivo. Si además registra el crédito en la <strong>cartera</strong>, se guardan también el plan de pagos pactado, las fechas en que anota cada pago y, si los escribe, el <strong>teléfono</strong> y la <strong>dirección del cliente</strong>. La dirección solo se muestra al usuario en la ficha de ese cliente. Ese teléfono solo se usa para abrir la aplicación de llamadas o de mensajería del propio dispositivo cuando el usuario lo pide: SimFin no envía mensajes ni hace llamadas por su cuenta.</p>
   <p>Son datos de una tercera persona. SimFin no los envía a ninguna parte y no tiene acceso a ellos, pero <strong>quien los solicita y decide usarlos es el usuario de la aplicación</strong>: informar a esa persona, obtener su consentimiento cuando sea exigible y cumplir la normativa de protección de datos que aplique en su país es responsabilidad suya, no de la aplicación.</p>
-  <p>Pueden eliminarse borrando la simulación correspondiente desde la pestaña <strong>Historial</strong>, o todas a la vez desde <strong>Perfil → Eliminar todo el historial</strong>.</p>
+  <p>El usuario puede pedirle a su cliente que <strong>firme en la pantalla</strong> el plan de pagos. Esa firma <strong>no se guarda</strong> en la aplicación ni en la copia de seguridad: solo queda dibujada en el documento que el usuario genera y comparte en ese momento, y desaparece al salir de la pantalla. La aplicación no certifica la identidad de quien firma ni el valor legal de esa firma.</p>
+  <p>Pueden eliminarse borrando la simulación correspondiente desde la pestaña <strong>Guardadas</strong>, o todas a la vez desde <strong>Perfil → Eliminar todo el historial</strong>. Los de la cartera, eliminando el crédito desde la pestaña <strong>Clientes</strong>.</p>
+
+  <h3>2.2. Archivo de respaldo</h3>
+  <p>Desde <strong>Perfil → Respaldo</strong> el usuario puede generar un archivo con sus simulaciones, su cartera, su entidad y su logo. Ese archivo <strong>incluye los datos de sus clientes</strong>. Se crea en el dispositivo y se entrega al menú de compartir de Android: SimFin no lo envía a ningún servidor ni conserva copia. Dónde se guarde —correo, almacenamiento en la nube, mensajería— lo decide el usuario, y su custodia es responsabilidad suya.</p>
 
   <h2>3. Copia de seguridad de Android</h2>
   <p>Si el dispositivo tiene activada la copia de seguridad de Android, los datos de SimFin entran en ella, igual que los de cualquier otra aplicación instalada.</p>
@@ -102,7 +107,10 @@
   <p>El plan de pagos en PDF o en imagen se genera <strong>en el propio dispositivo</strong> y se entrega al menú de compartir de Android. A partir de ese momento, lo que ocurra con el archivo depende de la aplicación que elija el usuario (mensajería, correo, almacenamiento) y de las políticas de esa aplicación. SimFin no interviene ni conserva copia.</p>
 
   <h2>6. Permisos</h2>
-  <p>SimFin solicita un único permiso: <strong>acceso a internet</strong>, y sólo para la descarga de tasas descrita en el punto 4. No solicita acceso a contactos, ubicación, cámara, micrófono, llamadas ni mensajes.</p>
+  <p>SimFin solicita <strong>acceso a internet</strong>, y sólo para la descarga de tasas descrita en el punto 4.</p>
+  <p>Si el usuario activa los <strong>recordatorios de cobro</strong>, la aplicación pide además permiso para <strong>mostrar notificaciones</strong>. Es opcional y puede retirarse en cualquier momento desde los ajustes del teléfono o desactivando los recordatorios en la pestaña Clientes. Para que los avisos programados sobrevivan a un reinicio del teléfono, la aplicación se registra para ejecutarse brevemente al encenderlo.</p>
+  <p>Los recordatorios <strong>se generan en el propio dispositivo</strong>, a partir de la cartera guardada en él: no intervienen servidores ni servicios de mensajería. El texto del aviso puede incluir el <strong>nombre del cliente</strong> y el valor de la cuota, y será visible en la pantalla del teléfono según la configuración de notificaciones del usuario.</p>
+  <p>SimFin no solicita acceso a contactos, ubicación, cámara, micrófono, llamadas ni mensajes.</p>
   <p>Para subir un logo se utiliza el selector de archivos del sistema, que permite elegir una sola imagen sin conceder acceso al resto de la galería.</p>
 
   <h2>7. Alcance internacional</h2>
@@ -110,7 +118,7 @@
   <p>Las validaciones legales —tope de usura, retención en la fuente y gravamen del 4×1000— <strong>se aplican únicamente en Colombia</strong>. Fuera de Colombia la aplicación calcula con fórmulas financieras estándar y <strong>no verifica ni afirma nada</strong> sobre los impuestos ni los límites legales de ningún país.</p>
 
   <h2>8. Finalidad del Tratamiento</h2>
-  <p>Los datos locales se usan exclusivamente para el funcionamiento de la aplicación: recordar las preferencias, conservar las simulaciones guardadas y completar los documentos que el usuario decide compartir.</p>
+  <p>Los datos locales se usan exclusivamente para el funcionamiento de la aplicación: recordar las preferencias, conservar las simulaciones y la cartera, avisar de los vencimientos si el usuario lo pide y completar los documentos y recibos que decide compartir.</p>
 
   <h2>9. Derechos del Titular</h2>
   <p>Como la aplicación no recopila ni conserva datos en ningún sistema nuestro, el usuario mantiene el control completo sobre su información y puede consultarla, modificarla o eliminarla en cualquier momento desde la propia aplicación.</p>
